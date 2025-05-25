@@ -9,12 +9,7 @@ export default function ProfileScreen({ navigation }) {
 
         
         <View style={styles.container}>
-            <View style={styles.buttonContainer}>
-                <Button
-                    title= "Go Back"
-                    onPress={() => navigation.goBack()}
-                />
-            </View>
+            
             
             <Text style={styles.title}>Profile Screen</Text>
             <View style={styles.buttonContainer}>
@@ -27,6 +22,12 @@ export default function ProfileScreen({ navigation }) {
                 <Button
                     title= "Go to Details"
                     onPress={() => navigation.navigate('Details')}
+                />
+            </View>
+            <View style={styles.buttonContainer}>
+                <Button
+                    title= "Go Back"
+                    onPress={() => navigation.goBack()}
                 />
             </View>
             

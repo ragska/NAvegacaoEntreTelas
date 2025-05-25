@@ -9,13 +9,6 @@ export default function DetailsScreen({ navigation }) {
 
         <View style={styles.container}>
             
-            <View style={styles.buttonContainer}>
-                <Button
-                    title= "Go Back"
-                    onPress={() => navigation.goBack()}
-                />
-            </View>
-
             <Text style={styles.title}>Details Screen</Text>
             <View style={styles.buttonContainer}>
                 <Button
@@ -27,6 +20,12 @@ export default function DetailsScreen({ navigation }) {
                 <Button
                     title= "Go to Profile"
                     onPress={() => navigation.navigate('Profile')}
+                />
+            </View>
+            <View style={styles.buttonContainer}>
+                <Button
+                    title= "Go Back"
+                    onPress={() => navigation.goBack()}
                 />
             </View>
 
